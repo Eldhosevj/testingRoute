@@ -1,0 +1,298 @@
+
+*{
+margin: 0px 0px;
+margin: 0px 0px;
+}
+
+.dateCalculator{
+margin: 0px auto;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 250px;
+color: white;
+
+
+text-transform:capitalize;
+font-style: italic;
+font-family: 'Tangerine', cursive;
+
+}
+
+
+p,h2{
+animation-name: colorChange;
+animation-iteration-count: infinite;
+animation-duration: 3s;
+animation-delay: 1s;
+color: orangered;
+
+
+}
+
+@keyframes colorChange{
+0%{
+    color: white;
+}
+20%{
+    color:red;
+}
+40%{
+    color: magenta;
+}
+60%{
+    color:blue;
+
+}
+80%{
+color: violet;
+}
+
+100%{
+color:green;
+}
+}
+
+.main-save-date{
+
+    box-sizing: border-box;
+min-width: 250px;
+
+}
+.sub-div{
+
+    background-image: url('../picture/frames.png');
+    background-repeat: no-repeat;
+background-size: 200px 200px;
+width: 270px;
+height: 270px;
+background-position: center;
+
+top: 100px;
+border-radius: 50%;
+background-color: white;
+}
+
+
+    .date {
+        
+            
+            font-size:35px;
+            font-family:Brush Script MT,'Lobster', cursive;
+            text-align:center;
+            
+        position:relative;
+    bottom:19px;
+    animation-name: dates;
+    animation-iteration-count: 1;
+  animation-duration: 1s;
+     
+}
+
+@keyframes dates{
+0%{
+left: -500px;
+
+}
+
+100%{
+left: 0px;
+transform: scaleX(10%);
+
+}
+}
+
+.save{
+    padding-top: 0px;
+  animation-name: saves;
+  animation-iteration-count: 1;
+animation-duration: 1s;
+position: relative;
+
+    color:white;
+    font-size:50px;
+  
+    text-align:center;
+    font-family:Brush Script MT,'Lobster', cursive;
+           
+}   
+
+
+@keyframes saves{
+0%{
+   
+bottom: 200px;
+
+}
+100%{
+    bottom: 0px;
+
+}
+}
+
+.first-undeline{
+   
+    margin:0px auto;
+    padding: 0px;
+
+  width: 190px;
+    height:30px;
+    background:transparent;
+    border-bottom:8px solid orange;
+    border-right:6px solid orange;
+    border-left:3px solid orange;
+    border-radius:20%;
+    transform:rotate(5deg);
+    position:relative;
+    bottom:100px;
+    color:white;
+animation-name: opcityvalue;  
+animation-iteration-count: 1;
+animation-duration: 1s;
+animation-timing-function: ease-out;
+}
+   
+
+@keyframes opcityvalue{
+0%{
+opacity: 0;
+transform: scale(0,0);
+
+}
+100%{
+opacity: 1;
+transform: scale(1,1);
+
+}
+}
+    .first-undeline p{
+        margin: 15px auto;
+        padding: 0px;
+    
+        font-size:28px;
+position: relative;
+    text-align:center;
+    transform:rotate3d(1,1,0,30deg);
+       padding-top:5px;
+top:  -11px;    
+font-family: 'Lobster', cursive;
+   font-style: bold;
+}
+    .first-undeline .name{
+        margin: 0px auto;
+        padding: 0px;
+    
+        font-size:30px;
+        font-family:Brush Script MT,'Great Vibes', cursive;
+        text-align:center;
+   
+}
+
+    .love{
+    position:relative;
+    bottom: 30px;
+    height:50px;
+    width:50px;
+    margin:0px auto 0px auto;
+    transform:rotate(10deg);
+    animation-name: colorchange;
+
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+     border-radius: 50%;  
+animation-delay: 1s;
+    }
+   
+    .love .love-first{
+    position:absolute;
+    height:50px;
+    width: 35px;
+    background:#c31212;
+    left:12px;
+    border-radius:50%;
+    transform:rotate(45deg);
+box-shadow: 0px 0px 10px green;   
+}
+
+@keyframes colorchange{
+0%{
+    background: #dd5e76;
+    transform: rotatey(270deg)
+}
+50%{
+transform: rotatex(100deg);
+}
+}
+.love .love-second{
+    position:absolute;
+    height:50px;
+    width:35px;
+    background:#c31212;
+    border-radius:50%;
+    transform:rotate(-45deg);
+    
+       
+}
+    
+@media (max-width:500px){
+
+      
+
+
+    .date {
+        
+            
+        font-size: 30px;
+        
+    position:relative;
+bottom:15px;
+ 
+}
+.save{
+    font-size:30px;
+    
+}   
+
+.first-undeline{
+   
+  width: 200px;
+  height:30px;
+    bottom:90px;
+}
+.first-undeline p{
+
+    font-size:20px;
+    
+}
+
+.first-undeline .name{
+
+    font-size: 25px;
+
+
+}
+
+.main-save-date{
+min-width: 300px;
+height: 380px;
+}
+.sub-div{
+
+   
+background-size: 250px 250px;
+width: 250px;
+height: 250px;
+left: calc(50vw - 125px);
+}
+
+
+
+}
+.Aslar{
+    position: relative;
+    top: -25px;
+}
+.Aysha{
+    position: relative;
+    top: -32px;
+left: -5px;
+}
