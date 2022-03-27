@@ -16,7 +16,7 @@
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
   },
-  "homepage": "http://aslaraysha.online/",
+  "homepage": "https://eldhosewedsalina.com/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
