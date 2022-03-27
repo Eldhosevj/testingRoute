@@ -12,7 +12,7 @@ const {isTyping}=props
 <div className='typing'>
     
 <h3 style={{color:"white"}}>
-        {isTyping?"typing...":""}
+        {isTyping?"Typing...":""}
       </h3>
 
 </div>

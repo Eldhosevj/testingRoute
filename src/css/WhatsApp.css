@@ -64,7 +64,7 @@ border: 4px solid #01210b;
 border-radius: 8%;
 display: block;
 margin-top: 10px;
-padding-top: 100px;
+padding-top: 60px;
 position: relative;
 left: calc(100vw - 280px);
 }
@@ -105,25 +105,27 @@ font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px; 
         width: 100vw;
-    min-height: 100px;
-background: blue;       
+    height: 60px;
+background:#393b39;       
 position: fixed;
 top: 0px;
 z-index: 1;
 display: inline-block;
+box-shadow: 2px 1px #888888;
 }
 .profile{
     border-radius: 50%;
-margin: 10px;
-    height: 80px;
-width: 80px;
+margin: 3px;
+    height: 50px;
+width: 50px;
 }
 
 .typing{
 
-    display:inline-block;
-    position:relative;
-    bottom: 10px;
-    float: right;
-    margin-right: calc(100vw - 100px);
+height: 10px;
+text-align: center;
+position: relative;
+bottom: 30px;
+font-family:'Courier New', Courier, monospace;
+font-size: 15x;
 }
