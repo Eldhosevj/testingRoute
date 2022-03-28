@@ -4,9 +4,9 @@ import SaveDate from '../pages/saveDate'
 import GoogleMap from '../pages/googleMap'
 import Head from './Head'
 import alinaImg from "../picture/alina.JPG"
-import AlinaAndEldhose from "../picture/AlinaAndEldhose.jpg"
+import AlinaAndEldhose from "../picture/AlinaAndEldhose1.jpg"
 
-import Eldhose from "../picture/eldhose.jpg"
+import Eldhose from "../picture/eldhosevj.jpg"
 
 const WhatsApp=(props)=>{
   const [isalina,setAlin]=React.useState(true)
@@ -135,13 +135,6 @@ document.getElementById("we").scrollIntoView({behavior:"smooth"})
         },12000)
 
 
-        setTimeout(()=>{
-          let array=[alina,eldhose,we,saveDate]
-          setDisplayChat(array)
-        setIsTyping(false)
-    document.getElementById("save-date").scrollIntoView({behavior:"smooth"})      
-          },14000)
-           
 
           
       setTimeout(()=>{

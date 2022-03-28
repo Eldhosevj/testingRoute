@@ -1,5 +1,5 @@
 import React from 'react'
-import Eldhose from "../picture/eldhose.jpg"
+import Eldhose from "../picture/eldhosevj.jpg"
 import totalDay from "../componets/totalDayLeft"
 
  const Head=(props)=>{
