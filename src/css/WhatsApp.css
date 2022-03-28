@@ -127,5 +127,22 @@ text-align: center;
 position: relative;
 bottom: 30px;
 font-family:'Courier New', Courier, monospace;
-font-size: 15x;
+font-size: 13px;
+}
+.typingCompleted{
+    
+height: 10px;
+text-align: end;
+position: relative;
+bottom: 30px;
+font-family:Arial, Helvetica, sans-serif;
+font-size: 10px;
+padding-right: 30px;
+}
+.loading{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition:12s linear 1s;
+    transform: rotate(360deg);
 }

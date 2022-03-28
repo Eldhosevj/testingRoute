@@ -9,12 +9,23 @@ import AlinaAndEldhose from "../picture/AlinaAndEldhose.jpg"
 import Eldhose from "../picture/eldhose.jpg"
 
 const WhatsApp=(props)=>{
+  const [isalina,setAlin]=React.useState(true)
+const [canShowRemainingDay,setCanShowRemainingDay]=React.useState(false)
+  const onLoadF=()=>{
+    console.log("isLoading")
+    setAlin(false)
+  }
 const alina=(  <div className='set-background-image'>
 
 <div className='msg-background-alina' id="alina">
-<img src={alinaImg}  style={{width:"240px" ,height:"170px"
+
+  
+  
+<img  onLoad={onLoadF} src={alinaImg}  style={{width:"240px" ,height:"170px"
 }}  />
-<p className='whats-app-pargraph' style={{color:"white"}}>Hi I am Alina</p>
+<p className='whats-app-pargraph' style={{color:"white"}}>Hi, I am Alina</p>
+
+
 </div>
 
 </div>
@@ -26,7 +37,7 @@ const eldhose=(
 <div className='msg-background-eldhose' id="eldhose">
 <img src={Eldhose}  style={{width:"180px" ,height:"260px"
 }}  />
-<p className='whats-app-pargraph' style={{color:"white"}}>Hi I am Eldhose</p>
+<p className='whats-app-pargraph' style={{color:"white"}}>Hi, I am Eldhose</p>
 </div>
 </div>
 )
@@ -39,15 +50,14 @@ const we=(
 We cherish the roles you play in our lives
 And would be honored if you would join us
 As we enter into the journey of marriage
-Eldhose VJ
+I Eldhose VJ
 and
 Alina Mathew
 Will exchange wedding vows
 Monday, 30<sup>th</sup> may 2022
 at 10 o’clock in the morning
 Malakara Cathalic Church, Narkkilakkad
- 
-</p>
+ </p>
 </div>
 </div>
 
@@ -143,6 +153,7 @@ document.getElementById("we").scrollIntoView({behavior:"smooth"})
           let array=[alina,eldhose,we,saveDate,map]
           setDisplayChat(array)
         setIsTyping(false)
+        setCanShowRemainingDay(true)
     document.getElementById("map").scrollIntoView({behavior:"smooth"})      
           },20000)
            
@@ -155,6 +166,7 @@ document.getElementById("we").scrollIntoView({behavior:"smooth"})
     <div className='containier'>
 <Head
 isTyping={isTyping}
+canShowRemainingDay={canShowRemainingDay}
 />
 {
   displayChat.map(item=>item)
