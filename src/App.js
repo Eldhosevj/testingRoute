@@ -18,6 +18,7 @@ function App(){
 
 
 return (<div>
+da manda
 <Router>
     <Switch>
         <Route path="/first" component={A1} />
