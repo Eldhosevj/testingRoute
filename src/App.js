@@ -1,19 +1,30 @@
 import React from 'react'
-import '../src/css/app.css'
-import WhatsApp from '../src/pages/whatsApp'
-//import Date from './componets/date'
-import Head  from './pages/Head'
+import {BrowserRouter as Router ,Route,Switch} from "react-router-dom"
+
+const A1=()=>{
+    return(<div>
+        I love you
+    </div>)
+}
+
+const A2=()=>{
+    return (<div>
+        I am not loving you
+    </div>)
+}
 function App(){
 
 
 
 
 return (<div>
-<div>
+<Router>
+    <Switch>
+        <Route path="/first" component={A1} />
+        <Route path="/second" component={A2} />
 
-<WhatsApp/>
-
-</div>
+    </Switch>
+</Router>
 </div>)
 
 }
